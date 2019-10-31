@@ -2,63 +2,59 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema Campeonato Brasileiro</title>
-</head>     
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>  
+<style>
+  h2{
+    margin-bottom: 20px;
+  }
+  .wrapper{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .table{
+    max-width: 480px;
+  } 
+  .table td{
+    text-align: center;
+  }
+  .box-lista-jogos{
+    max-width: 480px;
+    width: 100%;
+    max-height: 500px;
+    overflow: auto;
+  }
+  td.versus{
+    text-align: right;
+    width: 38px;
+  }
+
+  #montarCampeonato{
+    margin-bottom: 20px;
+  }
+</style>   
 <body>
-  <h2>Lista de jogos</h2>
-
-  <table id="listaJogos">
-    <tr>
-      <td>Flamengo</td>
-      <td>Palmeiras</td>
-    </tr>
-    <tr>
-      <td>Santos</td>
-      <td>São Paulo</td>
-    </tr>
-    <tr>
-      <td>Internacional</td>
-      <td>Corinthians</td>
-    </tr>
-    <tr>
-      <td>Grêmio</td>
-      <td>Athletico-PR</td>
-    </tr>
-    <tr>
-      <td>Bahia</td>
-      <td>Goiás</td>
-    </tr>
-    <tr>
-      <td>Vasco</td>
-      <td>Atlético-MG</td>
-    </tr>
-    <tr>
-      <td>Botafogo</td>
-      <td>Fortaleza</td>
-    </tr>
-    <tr>
-      <td>Ceará</td>
-      <td>Fluminense</td>
-    </tr>
-    <tr>
-      <td>Cruzeiro</td>
-      <td>CSA</td>
-    </tr>
-    <tr>
-      <td>Chapecoense</td>
-      <td>Avaí</td>
-    </tr>
-  </table>
-  
-
-  <table id="tabela-classificacao">
+  <div class="wrapper">
+    <h2>Lista de jogos</h2>
+    <button id="montarCampeonato" class="btn btn-primary">Montar Campeonato</button>
     
-  </table>
+    <div class="box-lista-jogos">
+      <table id="listaJogos" class="table"><tr></tr></table>
+    </div>
+
+
+    <table id="tabela-classificacao">
+      
+    </table>
+  </div>
+
   
-
-  <button id="montarCampeonato">Montar Campeonato</button>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
