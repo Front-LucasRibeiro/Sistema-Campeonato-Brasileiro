@@ -36,20 +36,49 @@
   #montarCampeonato{
     margin-bottom: 20px;
   }
+
+  .wrapper-tables{
+    display: flex;
+  }
+
+  #tabela-classificacao{
+    margin-left: 85px;
+  }
+
+  #tabela-classificacao td,
+  #tabela-classificacao th{
+    text-align: center;
+  }
 </style>   
 <body>
   <div class="wrapper">
     <h2>Lista de jogos</h2>
     <button id="montarCampeonato" class="btn btn-primary">Montar Campeonato</button>
     
-    <div class="box-lista-jogos">
-      <table id="listaJogos" class="table"><tr></tr></table>
+    <div class="wrapper-tables">
+      <div class="box-lista-jogos">
+        <table id="listaJogos" class="table"><tr></tr></table>
+      </div>
+
+      <table id="tabela-classificacao" class="table">
+        <tr>
+          <thead>
+            <th>Time</th>
+            <th></th>
+            <th>Pontos</th>
+            <th></th>
+            <th>Vitórias</th>
+            <th></th>
+            <th>Derrotas</th>
+            <th></th>
+            <th>SG</th>
+            <th></th>
+            <th>Empates</th>
+            <th></th>
+          </thead>
+        </tr>
+      </table>
     </div>
-
-
-    <table id="tabela-classificacao">
-      
-    </table>
   </div>
 
   
