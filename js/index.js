@@ -39,7 +39,7 @@ function gerarJogos(listaTimes) {
     }
   }
 
-  gerarGols(jogos)
+  gerarGols()
 }
 
 function defineVencedor(listaTimes){
@@ -128,7 +128,7 @@ function defineVencedor(listaTimes){
 }
 
 
-function gerarGols(jogos){
+function gerarGols(){
 
   for(var i=0; i<760; i++) {
     var gols = Math.floor(Math.random() * 6);
@@ -143,15 +143,27 @@ function criaTabelaClassificacao(listaTimes){
 
   for (var n=0; n<20; n++) {
     var tr = '<tr>\
-                <td>'+listaTimes[n].time+'<td/>\
-                <td>'+listaTimes[n].pontos+'<td/>\
-                <td>'+listaTimes[n].vitorias+'<td/>\
-                <td>'+listaTimes[n].derrotas+'<td/>\
-                <td>'+listaTimes[n].saldoGols+'<td/>\
-                <td>'+listaTimes[n].empates+'<td/>\
-              <tr/>';
+    <td>'+listaTimes[n].time+'<td/>\
+    <td>'+listaTimes[n].pontos+'<td/>\
+    <td>'+listaTimes[n].vitorias+'<td/>\
+    <td>'+listaTimes[n].derrotas+'<td/>\
+    <td>'+listaTimes[n].saldoGols+'<td/>\
+    <td>'+listaTimes[n].empates+'<td/>\
+    <tr/>';
     $('#tabela-classificacao').append(tr);
   }
+}
+
+function ordenaTabelaPorPontuacao(listaTimes){
+
+  listaTimes.sort(function(a,b) {
+    if(a.pontos < b.pontos) return -1;
+    if(a.pontos > b.pontos) return 1;
+    return 0;
+  });
+
+  var listaOrdenada = listaTimes.slice(0).reverse();
+  criaTabelaClassificacao(listaOrdenada);
 }
 
 
@@ -160,6 +172,6 @@ $( document ).ready(function() {
   $('#montarCampeonato').click(function(){
     gerarJogos(listaTimes);
     defineVencedor(listaTimes);
-    criaTabelaClassificacao(listaTimes);
+    ordenaTabelaPorPontuacao(listaTimes);
   });
 });
