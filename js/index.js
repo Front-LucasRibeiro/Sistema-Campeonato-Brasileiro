@@ -1,24 +1,24 @@
 var listaTimes = [
-{time:'Flamengo', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0},
-{time:'Palmeiras', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Santos', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'São Paulo', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Internacional', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Corinthians', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Grêmio', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Athletico-PR', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Bahia', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Goiás', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Vasco', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Atlético-MG', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Botafogo', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Fortaleza', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Ceará', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Fluminense', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Cruzeiro', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'CSA', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Chapecoense', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
-{time:'Avaí', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/04/10/Flamengo-2018.svg',time:'Flamengo', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0},
+  {imagem:'https://s.glbimg.com/es/sde/f/equipes/2019/07/07/palmeiras.svg',time:'Palmeiras', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/12/santos.svg',time:'Santos', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/sao-paulo.svg',time:'São Paulo', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/internacional.svg',time:'Internacional', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2019/09/30/Corinthians.svg',time:'Corinthians', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/12/gremio.svg',time:'Grêmio', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2019/09/09/Athletico-PR.svg',time:'Athletico-PR', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/bahia.svg',time:'Bahia', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2019/05/01/Goias_SVG.svg',time:'Goiás', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/vasco.svg',time:'Vasco', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/10/atletico-mg.svg',time:'Atlético-MG', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2019/02/04/botafogo-svg.svg',time:'Botafogo', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/06/10/optimised.svg',time:'Fortaleza', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2019/10/10/ceara.svg',time:'Ceará', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/fluminense.svg',time:'Fluminense', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/cruzeiro.svg',time:'Cruzeiro', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/csa.svg',time:'CSA', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/03/11/chapecoense.svg',time:'Chapecoense', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
+  {imagem:'https://s.glbimg.com/es/sde/f/organizacoes/2018/09/04/avai-futebol-clube.svg',time:'Avaí', pontos:0, vitorias: 0, derrotas:0, saldoGols: 0, empates:0 },
 ]
 
 
@@ -143,6 +143,7 @@ function criaTabelaClassificacao(listaTimes){
 
   for (var n=0; n<20; n++) {
     var tr = '<tr>\
+    <td><img width="30" heigth="30" src="'+listaTimes[n].imagem+'"/><td/>\
     <td>'+listaTimes[n].time+'<td/>\
     <td>'+listaTimes[n].pontos+'<td/>\
     <td>'+listaTimes[n].vitorias+'<td/>\
@@ -159,6 +160,10 @@ function ordenaTabelaPorPontuacao(listaTimes){
   listaTimes.sort(function(a,b) {
     if(a.pontos < b.pontos) return -1;
     if(a.pontos > b.pontos) return 1;
+    if(a.saldoGols < b.saldoGols) return -1;
+    if(a.saldoGols > b.saldoGols) return 1;
+    if(a.vitorias < b.vitorias) return -1;
+    if(a.vitorias > b.vitorias) return 1;
     return 0;
   });
 
@@ -168,6 +173,9 @@ function ordenaTabelaPorPontuacao(listaTimes){
 
 
 $( document ).ready(function() {
+  $('#limpar').click(function(){
+    location.reload();
+  });
 
   $('#montarCampeonato').click(function(){
     gerarJogos(listaTimes);
